@@ -9,20 +9,25 @@ import SearchDetail from './SearchDetail'
 
 export class App extends Component {
     state = {
-        result : []
-    }
-    fetchData(term){
-        const response = axios.get('https://api.unsplash.com/search/photos',{
+        images : [],
+        founded : 0,
+        pages : 0
+    };
+    fetchData = async (term) => {
+        const response = await axios.get('https://api.unsplash.com/search/photos',{
             params:{
                 query : term
             },
             headers:{
             Authorization: 'Client-ID fRICJ3kWAmMKD8oNy52wYHH6hlcCA5GtY23WuVmQ3_U'  
             }
-        }).then((response)=> {
-            console.log(response.data.results)
-            this.setState({result : response.data.results})
-         })
+        });
+        console.log(response)
+        this.setState({images : response.data.results,
+            founded : response.data.total,
+            pages : response.data.total_pages
+        });
+        
 
         } 
 
@@ -30,7 +35,7 @@ export class App extends Component {
     return (
       <div>
         <SearchBar onSubmitForm={this.fetchData} />
-        <SearchDetail/>
+        {this.state.founded && <SearchDetail imagesFounded={this.state.founded} totalPages={this.state.pages}/>}
       </div>
     )
   }
