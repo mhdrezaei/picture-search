@@ -16,7 +16,9 @@ export class SearchDetail extends Component {
                 <div className="me-2">
                   <p className="mb-0 color-label-primary">Search Resoult : </p>
                 </div>
-                <div className="item-progress purple-color">10K</div>
+                <div className="item-progress purple-color">
+                  {this.props.imagesFounded}
+                </div>
               </div>
             </li>
             <li className="d-flex align-items-center">
@@ -29,7 +31,9 @@ export class SearchDetail extends Component {
                 <div className="me-2">
                   <p className="mb-0 color-label-primary">Pages number :</p>
                 </div>
-                <div className="item-progress  purple-color">10K</div>
+                <div className="item-progress  purple-color">
+                  {this.props.totalPages}
+                </div>
               </div>
             </li>
           </ul>
