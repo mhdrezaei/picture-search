@@ -132,6 +132,9 @@ avatar-lg .avatar-initial {
     background-color: #30405f !important;
     color: #5a8dee !important;
 }
+.color-label-primary {
+    color: #5a8dee !important;
+}
 .rounded-circle {
     border-radius: 50% !important;
 }

@@ -14,9 +14,9 @@ export class SearchDetail extends Component {
               </div>
               <div className="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                 <div className="me-2">
-                  <p className="mb-0 purple-color">Search Resoult : </p>
+                  <p className="mb-0 color-label-primary">Search Resoult : </p>
                 </div>
-                <div className="item-progress bg-label-primary">10K</div>
+                <div className="item-progress purple-color">10K</div>
               </div>
             </li>
             <li className="d-flex align-items-center">
@@ -27,9 +27,9 @@ export class SearchDetail extends Component {
               </div>
               <div className="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                 <div className="me-2">
-                  <p className="mb-0 purple-color">Pages number :</p>
+                  <p className="mb-0 color-label-primary">Pages number :</p>
                 </div>
-                <div className="item-progress bg-label-primary">10K</div>
+                <div className="item-progress  purple-color">10K</div>
               </div>
             </li>
           </ul>
