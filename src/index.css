@@ -138,3 +138,37 @@ avatar-lg .avatar-initial {
 .rounded-circle {
     border-radius: 50% !important;
 }
+/* images list */
+img.card-img{
+    transition: all 0.5s ease-in-out;
+}
+.image-founded div.card{
+    transition: all 0.5s ease-in-out;
+
+}
+.image-founded:hover div.card{
+    border:  1px solid #ff00df;
+}
+.image-founded:hover img.card-img{
+    opacity: 0.8;
+
+}
+
+/* image profile */
+
+.profile-user .profile-image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #ff00df;
+}
+.profile-user .card-title{
+    line-height: 2rem;
+    margin-left: 0.5rem;
+}
+.grid {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  }
