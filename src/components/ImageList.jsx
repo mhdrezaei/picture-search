@@ -10,6 +10,7 @@ export class ImageList extends Component {
             {this.props.items.map((item) => {
               return (
                 <ImageItem
+                key={item.id}
                   url={item.urls.small}
                   profileImg={item.user.profile_image}
                   userName={item.user.username}
